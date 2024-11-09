@@ -1,0 +1,94 @@
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-sm-auto bg-light sticky-top">
+          <div class="d-flex flex-sm-column flex-row flex-nowrap bg-light align-items-center sticky-top">
+              <a routerLink="/dashboard" class="d-block p-3 link-dark text-decoration-none" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
+                <img src="../assets/img/favicon-32x32.png" alt="" srcset="">
+              </a>
+              <ul class="nav nav-pills nav-flush flex-sm-column flex-row flex-nowrap mb-auto mx-auto text-center align-items-center">
+                  <li class="nav-item">
+                      <a routerLink="/dashboard" class="nav-link py-3 px-3 text-bg-primary" style="color: grey;" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
+                          <i class="bi-house fs-3"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a routerLink="/addStudent" class="nav-link py-3 px-3 bg-light" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Dashboard">
+                        <i class="bi bi-person-plus fs-3"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a routerLink="/actionMark" class="nav-link py-3 px-3 bg-light" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Orders" data-bs-original-title="addMark">
+                        <i class="bi bi-cloud-plus fs-3"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a routerLink="/studentList" class="nav-link py-3 px-3 bg-light" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Customers">
+                          <i class="bi-people fs-3"></i>
+                      </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle bg-light" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#" (click)="OnUserLogout()">Log out</a>
+                    </div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <div class="col-sm p-3 min-vh-100">
+          <!--dashboard content -->
+          <section>
+            <div class="row">
+              <div class="col-xl-3 col-sm-6 col-12 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between px-md-1">
+                      <div class="align-self-center">
+                        <i class="bi bi-book"></i>
+                      </div>
+                      <div class="text-end">
+                        <h3>156</h3>
+                        <p class="mb-0">Course</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-6 col-12 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between px-md-1">
+                      <div class="align-self-center">
+                        <i class="bi bi-person-fill text-success fa-3x"></i>
+                      </div>
+                      <div class="text-end">
+                        <h3>410</h3>
+                        <p class="mb-0">Students</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-6 col-12 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between px-md-1">
+                      <div class="align-self-center">
+                        <i class="bi bi-person-fill text-success fa-3x"></i>
+                      </div>
+                      <div class="text-end">
+                        <h3>410</h3>
+                        <p class="mb-0">Teachers</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+

@@ -1,0 +1,57 @@
+<div class="moderator-page-container">
+    <h1>Moderator Dashboard</h1>
+    <p>Welcome, {{ username }}!</p>
+    
+    <div class="moderator-actions">
+      <h3>Actions</h3>
+      <button class="btn" (click)="reviewReports()">Review Reports</button>
+      <button class="btn" (click)="manageUsers()">Manage Users</button>
+      <button class="btn" (click)="viewAnalytics()">View Analytics</button>
+      <button class="btn logout-btn" (click)="logout()">Logout</button>
+    </div>
+  </div>
+  
+  <style>
+    .moderator-page-container {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    h1 {
+      color: #ffc107; /* Gold for moderator */
+    }
+  
+    .moderator-actions {
+      margin-top: 20px;
+    }
+  
+    .moderator-content {
+      margin-top: 30px;
+      text-align: left;
+    }
+  
+    .btn {
+      padding: 10px 20px;
+      margin: 5px;
+      background-color: #17a2b8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  
+    .btn:hover {
+      background-color: #138496;
+    }
+  
+    .logout-btn {
+      background-color: #dc3545;
+    }
+  
+    .logout-btn:hover {
+      background-color: #c82333;
+    }
+  </style>
+  

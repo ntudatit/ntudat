@@ -1,0 +1,57 @@
+<!-- src/app/pages/user-page/user-page.component.html -->
+<div class="user-page-container">
+    <h1>Welcome, {{ username }}!</h1>
+    <p>Email: {{ email }}</p>
+  
+    <div class="user-actions">
+      <h3>Your Actions</h3>
+      <button class="btn" (click)="viewProfile()">View Profile</button>
+      <button class="btn" (click)="editSettings()">Edit Settings</button>
+      <button class="btn logout-btn" (click)="logout()">Logout</button>
+    </div>
+  </div>
+  
+  <style>
+    .user-page-container {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    h1 {
+      color: #007bff;
+    }
+  
+    .user-actions {
+      margin-top: 20px;
+    }
+  
+    .user-content {
+      margin-top: 30px;
+      text-align: left;
+    }
+  
+    .btn {
+      padding: 10px 20px;
+      margin: 5px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  
+    .btn:hover {
+      background-color: #218838;
+    }
+  
+    .logout-btn {
+      background-color: #dc3545;
+    }
+  
+    .logout-btn:hover {
+      background-color: #c82333;
+    }
+  </style>
+  
