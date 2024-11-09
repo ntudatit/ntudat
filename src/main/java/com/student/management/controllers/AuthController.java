@@ -32,7 +32,7 @@ import com.student.management.repository.UserRepository;
 import com.student.management.security.jwt.JwtUtils;
 import com.student.management.security.services.UserDetailsImpl;
 
-@CrossOrigin(origins = "*", maxAge = 3600)
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
